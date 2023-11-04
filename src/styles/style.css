@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 10pt;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    width: 100%;
+    height: 100%
+}
+
+.desktopApplication {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.desktopApplication > .topBar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #171717;
+    padding: 0.5%;
+}
+
+.topBar > .titleBar {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    flex-shrink: 0;
+    align-items: center;
+    width: 85%;
+    
+}
+
+.topBar > .loginStatus {
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+}
+
+.topBar > .titleBarButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 5%;
+}
+
+.titleBarButtons > button {
+    margin-left: 5%;
+    height: 100%;
+    width: 33%;
+}
+
+.desktopApplication > .contentArea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contentArea > .leftMenu {
+    width: 10%;
+    height: 100%;
+    background-color: #232323;
+}
+
+.contentArea > .contentPages {
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    opacity: 0.9;
+    padding: 1%;
+}
+
+.contentPages > .CharacterMoveSetNotes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.contentPages > .OverlayStatus {
+    padding-bottom: 2%;
+}
+
+.contentPages > .MonitorGameplayStatus {
+    padding-bottom: 2%;
+}
+
+.CharacterMoveSetNotes > .MoveSetNotesTitle {
+    width: 100%;
+    background-color: red;
+    font-size: 32px;
+    padding: 1%;
+}
+
+.CharacterMoveSetNotes > .MoveSetNotesImages {
+    display: flex;
+    flex-direction: row;
+}
+
+.MoveSetNotesImages > .MoveImage {
+    margin: 1% 0% 0% 5%;
+}
+
+.OverlayStatus > .OverlayStatusTitle {
+    padding-bottom: 1%;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+.OverlayStatus > .OverlayStatusDetails {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+}
+
+.MonitorGameplayStatus > .MonitorGameplayStatusTitle {
+    padding-bottom: 1%;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+.MonitorGameplayStatus > .MonitorGameplayStatusDetails {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+}
+

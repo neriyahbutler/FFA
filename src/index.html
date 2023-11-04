@@ -1,21 +1,76 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
+<html class="w-full h-full m-0 p-0">
+    <head>  
         <title>FrameFighter Assistant</title>
+        <!-- <link rel="stylesheet" href="/FFA/src/dist/output.css"> -->
         <script defer src="js/appFunctions.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <div class="desktopApplication">
-            <div class="titleBar">
-                FrameFighter Assistant
+    <body class="w-full h-full">
+        <div class="w-full h-full text-white flex flex-col overflow-hidden">
+            <div class="h-12 w-full bg-neutral-900 flex items-center p-2 text-white text-extralight flex-row">
+                <div class="w-9/12">FrameFighter Assistant</div>
+                <div class="max-w-max bg-slate-400 pr-8">Welcome Neriyah!</div>
+                <!-- Container for the minimize/maximize/close buttons -->
+                <div class="flex flex-row max-w-max justify-end">
+                    <button class="p-1">
+                        <img src="./icons/icons8-subtract-32.png">
+                    </button>
+                    <button class="p-1">
+                        <img src="./icons/icons8-maximize-button-32.png">
+                    </button>
+                    <button class="p-1">
+                        <img src="./icons/icons8-close-32.png">
+                    </button>
+                </div>
             </div>
-            <div class="loginStatus">
-                Welcome, Neriyah
-            </div>
-            <div class="titleBarButtons">
-                <button id="minBtn" class="titleBtn minBtn" title="Minimize"></button>
-                <button id="maxBtn" class="titleBtn maxBtn" title="Maximize"></button>
-                <button id="closeBtn" class="titleBtn closeBtn" title="Close"></button>
+            <!-- Element containing the containers/etc for the sidebar and main content page -->
+            <div class="flex flex-row h-full w-full">
+                <div class="h-full w-2/12 bg-neutral-800">
+                    <div class="w-12/12 text-center max-h-max bg-slate-500">sidebar</div>
+                    
+                </div>
+                <!-- Element for main content area -->
+                <div class="h-full w-10/12 p-2 bg-neutral-800 bg-opacity-90 overflow-auto h-10">
+                    <!-- Element for CharacterMoveSetNotes section -->
+                    <div class="w-full h-12/12 p-5">
+                        <div class="text-3xl">Character Move Set Notes</div>
+                        <div class="flex flex-row p-6">
+                            <!-- Elements representing the character's moves -->
+                            <div class="bg-red-700 p-8 mr-1 rounded-lg">
+                                <img src="./images/move.png">
+                                <div>
+                                    Standing Light Punch
+                                </div>
+                            </div>
+                            <div class="bg-red-700 p-8 mr-1 rounded-lg">
+                                <img src="./images/move.png">
+                                <div>
+                                    Standing Light Punch
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Element for Overlay Status -->
+                    <div class="p-5">
+                        <div class="text-3xl mb-3">Overlay Status</div>
+                        <div>
+                            Overlay is enabled!
+                            <br/><br/>
+                            In order for the overlay feature to work best, please enable the monitor gameplay!
+                        </div>
+                    </div>
+                    <!-- Element for Monitor Gameplay Status -->
+                    <div class="p-5">
+                        <div class="text-3xl mb-3">Monitor Gameplay Status</div>
+                        <div>
+                            Monitor Gameplay feature is enabled!
+                            <br/><br/>
+                            Ensure the blah blah blah whatever
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
