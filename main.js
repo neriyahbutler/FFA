@@ -14,11 +14,12 @@ function createWindow() {
             contextIsolation: false,
             devTools: true,
             prelead: path.join(__dirname, )
-        }
+        },
+        transparent: true
     })
 
     win.loadFile('src/index.html')
-    win.setBackgroundColor('#171717')
+    win.setBackgroundColor('#00000000')
 }
 
 app.whenReady().then(() => {
